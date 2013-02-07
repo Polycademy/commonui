@@ -1,0 +1,7 @@
+{"ts":1360207361670,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1360207488177,"patch":[[{"diffs":[[1,"{\n    \"require\":{\n        \"leafo/lessphp\": \"3.0.8\"\n    }\n    \"config\":{\n        \"bin-dir\": \"bin/\"\n    }\n}"]],"start1":0,"start2":0,"length1":0,"length2":105}]],"length":105,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1360208052772,"patch":[[{"diffs":[[0,"8\"\n    }"],[1,","],[0,"\n    \"co"]],"start1":48,"start2":48,"length1":16,"length2":17}]],"length":106,"saved":false}
+{"ts":1360208119032,"patch":[[{"diffs":[[0,"\": \""],[-1,"3.0"],[1,"0.3"],[0,".8\"\n"]],"start1":40,"start2":40,"length1":11,"length2":11}]],"length":106,"saved":false}
+{"ts":1360208505998,"patch":[[{"diffs":[[0," \"0.3.8\""],[1,",\n        \"behat/behat\": \"2.4.*@stable\","],[0,"\n    },\n"]],"start1":42,"start2":42,"length1":16,"length2":56}]],"length":146,"saved":false}
+{"ts":1360208556188,"patch":[[{"diffs":[[0,"@stable\""],[-1,","],[0,"\n    },\n"]],"start1":81,"start2":81,"length1":17,"length2":16}]],"length":145,"saved":false}
+{"ts":1360209553548,"patch":[[{"diffs":[[0,"3.8\""],[-1,",\n        \"behat/behat\": \"2.4.*@stable\""],[0,"\n   "]],"start1":46,"start2":46,"length1":47,"length2":8}]],"length":106,"saved":false}
