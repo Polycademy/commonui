@@ -23,6 +23,7 @@ header.navbar{
 		background: transparent;
 		border: none;
 		box-shadow: none;
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); /* This is just for IE, bootstrap normally makes IE create a gradient, here we don't want that! */
 		.logo{
 			margin: 20px; /* The logo may be largest item in the header, we can give a margin to push out the navbar-inner */
 			float: left; /* Float simply pulls the item to left */
@@ -40,6 +41,7 @@ header.navbar{
 			}
 		}
 		.nav-collapse{
+			clear: both; /* This is here because clear:both clears the logo that is floated to the left, if this was left out, the logo could not be clicked on because this would be on top of the logo's container. This is a bit hacky, but it's the result of us changing bootstrap's default style to fit our style. */
 			.nav{
 				font-family: arial;
 				font-size: 18px;
