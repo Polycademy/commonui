@@ -3,6 +3,7 @@
    ========================================================================== */
 /* 979px is exactly the width that bootstrap collapses its responsive navigation, here we are overiding our previous CSS sytle on the collapse to return to its orginal margin-top: 5px, so that it doesn't keep that negative margin when it's collapsed. */
 @media (max-width: 979px) {
+
 	header.navbar .navbar-inner{
 		.nav-collapse{
 			.navbar-search{
@@ -10,9 +11,11 @@
 			}
 		}
 	}
+	
 }
 
 @media (max-width: 512px) {
+
 	header.navbar .navbar-inner{
 		.logo{
 			float: none; /* When the screen gets to small, the btn-navbar and the logo cannot stay on the same line, so they stack, in this case we should remove the float to center the logo. */
@@ -24,4 +27,5 @@
 			float: none; /* Remove bootstrap's float to center! */
 		}
 	}
+	
 }
