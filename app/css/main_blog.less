@@ -34,14 +34,18 @@ h2{
 	font-family: georgia;
 	line-height: 24px;
 	word-spacing: 3px;
-	p{
-		&:first-letter{
-			font-size: 50px;
+	.content{
+		margin-top: 25px;
+		clear: both;
+		p{
+			&:first-letter{
+				font-size: 50px;
+			}
 		}
-	}
-	p + p{
-		text-indent: 24px;
-		margin-top: 24px; /* We could just have both bottom and top be 24px, because vertical margins collapse, but here I'm demonstrating how you could get vertical margins without affecting the first element! */
+		p + p{
+			text-indent: 24px;
+			margin-top: 24px; /* We could just have both bottom and top be 24px, because vertical margins collapse, but here I'm demonstrating how you could get vertical margins without affecting the first element! */
+		}
 	}
 }
 
