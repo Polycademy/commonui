@@ -9,6 +9,12 @@
 	box-sizing: border-box;
 }
 
+.border_image(@url, @width, @style){
+	-moz-border-image: url(@url) @width @style; /* old ff */
+	-webkit-border-image: url(@url) @width @style; /* safari */
+	-o-border-image: url(@url) @width @style; /* opera */
+	border-image: url(@url) @width @style;
+}
 
 /* ==========================================================================
    CONTAINERS
@@ -50,6 +56,11 @@
 		border: 20px solid #ccc;
 		border-top-left-radius: 200px 10px;
 		border-bottom-right-radius: 200px 10px;
+	}
+	.image_border{
+		/* You can even use images as borders. You need to design an image that is a square, each corner and side of the border image corresponds to the corner and side of the actual border. You can do lots of border images, and it can get complex. So try to keep it simple. */
+		border: 9px solid #e3e3e3; /* This part is required as it actually gives the border the specified width. The 9px matches the 9px on the border image. The solid #e3e3e3 is the fallback colour to browsers that don't support border images. In older IEs, they will see a solid colour. */
+		.border_image('../img/border_image.png', 9, repeat); /* This is one of the many ways that border images can be created. Look into mdn border images for more. There's also round, and stretch which affects the sides but not the corners. Experiment! Using round in this case, won't change anything because the border images is also based on a 9 by 9 images turned into 27 by 27. */
 	}
 }
 
